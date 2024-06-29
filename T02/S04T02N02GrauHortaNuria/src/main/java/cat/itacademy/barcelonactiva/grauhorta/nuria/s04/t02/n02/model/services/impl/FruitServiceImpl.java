@@ -31,13 +31,13 @@ public class FruitServiceImpl implements FruitService {
         return (List<Fruit>)fruitRepository.findAll();
     }
 
-    public Fruit findOneFruit(Long id) {
+    public Fruit findOneFruit(int id) {
         Optional<Fruit> requestedFruit = fruitRepository.findById(id);
         return requestedFruit.orElseThrow(() -> new FruitNotFoundException("Fruit with id: " + id + " not found."));
     }
 
     @Override
-    public Fruit updateFruit(Fruit fruit, Long id) throws NullPointerException {
+    public Fruit updateFruit(Fruit fruit, int id) throws NullPointerException {
         Fruit newFruit = fruitRepository.findById(id).get();
         if (newFruit != null) {
             if (Objects.nonNull((fruit.getName())) && !"".equalsIgnoreCase(fruit.getName())) {
@@ -54,7 +54,7 @@ public class FruitServiceImpl implements FruitService {
 
 
     @Override
-    public void deleteFruitById(Long id) {
+    public void deleteFruitById(int id) {
         fruitRepository.findById(id)
                 .orElseThrow(() -> new FruitNotFoundException("Fruit with id: " + id + " not found."));
         fruitRepository.deleteById(id);

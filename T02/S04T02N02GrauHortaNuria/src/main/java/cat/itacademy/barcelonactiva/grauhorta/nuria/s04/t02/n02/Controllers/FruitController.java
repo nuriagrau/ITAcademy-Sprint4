@@ -34,7 +34,7 @@ public class FruitController {
 
     //http://localhost:8080/fruita/delete/{id}
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<HttpStatus> deleteFruitById(@PathVariable("id") Long id) {
+    public ResponseEntity<HttpStatus> deleteFruitById(@PathVariable("id") int id) {
         fruitService.deleteFruitById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
@@ -42,7 +42,7 @@ public class FruitController {
     //http://localhost:8080/fruita/getOne/{id}
 
     @GetMapping("/getOne/{id}")
-    public ResponseEntity<Fruit> findOneFruit(@PathVariable("id") Long id) {
+    public ResponseEntity<Fruit> findOneFruit(@PathVariable("id") int id) {
         Fruit fruitData = fruitService.findOneFruit(id);
         return new ResponseEntity<>(fruitData, HttpStatus.OK);
 

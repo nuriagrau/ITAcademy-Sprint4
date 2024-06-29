@@ -14,11 +14,11 @@ public interface FruitService {
     List<Fruit> fetchFruitList();
 
     // Read one operation
-   Fruit findOneFruit(Long id);
+   Fruit findOneFruit(int id);
 
     // Update operation
-    Fruit updateFruit(Fruit fruit, Long id);
+    Fruit updateFruit(Fruit fruit, int id);
 
     // Delete operation
-    void deleteFruitById(Long id) throws FruitNotFoundException;
+    void deleteFruitById(int id) throws FruitNotFoundException;
 }
