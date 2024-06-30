@@ -1,4 +1,4 @@
-package cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n03.model.services.Impl;
+package cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n03.model.services.impl;
 
 import cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n03.exception.FruitAlreadyExistsException;
 import cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n03.exception.FruitNotFoundException;

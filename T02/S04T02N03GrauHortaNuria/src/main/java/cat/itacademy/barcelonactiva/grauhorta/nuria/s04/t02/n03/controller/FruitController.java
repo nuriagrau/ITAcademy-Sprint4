@@ -2,7 +2,7 @@ package cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n03.controller;
 
 import cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n03.exception.FruitNotFoundException;
 import cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n03.model.domain.Fruit;
-import cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n03.model.services.Impl.FruitServiceImpl;
+import cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n03.model.services.impl.FruitServiceImpl;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 
 @RestController
