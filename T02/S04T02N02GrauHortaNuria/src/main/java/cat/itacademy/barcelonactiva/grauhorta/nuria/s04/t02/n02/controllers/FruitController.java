@@ -1,4 +1,4 @@
-package cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n02.Controllers;
+package cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n02.controllers;
 
 import cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n02.model.domain.Fruit;
 import cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t02.n02.model.services.FruitService;
@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/fruits")
