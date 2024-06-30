@@ -1,7 +1,6 @@
-package cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t01.n01.Controllers;
+package cat.itacademy.barcelonactiva.grauhorta.nuria.s04.t01.n01.controllers;
 
 
-import org.springframework.boot.context.properties.bind.DefaultValue;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
